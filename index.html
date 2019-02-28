@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, smaximum-scale=1.0, user-scalable=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,8 +13,13 @@
   <body> 
   		<div class="container"> 
   			<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+  				  <!-- Toggler/collapsibe Button -->
+				  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+
 			    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">   
-			        <div class="collapse navbar-collapse text-center" id="navbarsExample11">
+			        <div class="text-center" id="collapsibleNavbar">
 			           <ul class="navbar-nav font-weight-bold mc-auto">
 		                <li class="nav-item">
 		                  <a href="./index.html" class="nav-link"> Home </a>
@@ -54,19 +59,19 @@
 			    </div>
 			</nav>
 		</div> 
-	<section id="home" class="intro-home mb-5 bg-black">
-		<div style="background-image: url(&quot;./img/bkg.jpg&quot;); height: 520px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;background-repeat:no-repeat; background-size:100% ;-moz-background-size:100% ;">
-			
-	     <div class="container text-white">
-	        <div class="row">
-	          <div class="col text-center text-lg-left"> 
-	              <p style="padding-top:110px;" class="display-4 font-weight-bold text-shadow">Weakly Supervised Learning for Real-World Computer Vision Applications and the 1st Learning from Imperfect Data (LID) Challenge</p>
-	              <h2>CVPR 2019 Workshop, Long Beach, CA</h2> 
-	          </div>
-	        </div>
-	      </div>
 
-		</div> 
+	<section id="home" class="mb-5">	
+		<div class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img class="d-block w-100" src="./img/bkg.jpg" alt="Long Beach">
+		      <div class="carousel-caption">
+			    <p class="display-4 font-weight-bold text-shadow"> Weakly Supervised Learning for Real-World Computer Vision Applications and the 1st Learning from Imperfect Data (LID) Challenge</p>
+			    <p> CVPR 2019 Workshop, Long Beach, CA</p>
+			  </div>
+		    </div> 
+		  </div>  
+		</div>
 	</section> 
 
 	<section id="introduction" class="py-6 bg-white">
@@ -79,12 +84,12 @@
 	    </div>
 	</section>
   
-	<section id="papers" class="py-6 bg-white" style="padding-top:80px;margin-top:-80px;">
+	<section id="papers" class="py-6 mb-5 bg-white" style="padding-top:80px;margin-top:-80px;">
 	      <div class="container">
 	        <div class="row"> 
 	          	<h2>Call for Papers</h2> <br>
             </div>
-            <div class="row mb-5"> 
+            <div class="row"> 
 	            <p>The workshop are expected to deal with data in a weakly supervised manner, which will cover but not limit to the following topics: </p>
 	            <ul>
 	            	<li>Weakly supervised learning algorithms</li>
@@ -108,9 +113,9 @@
 	</section>
 
 
-	<section id="challenge" class="py-6 bg-white" style="padding-top:80px;margin-top:-80px;">
+	<section id="challenge" class="py-6 mb-5 bg-white" style="padding-top:80px;margin-top:-80px;">
 	      <div class="container">
-	        <div class="row mb-5"> 
+	        <div class="row"> 
 	          	<h2>Challenge</h2> 
 	            <p>We will organize the first Learning from Imperfect Data (LID) challenge on object semantic segmentation and scene parsing, which includes two competition tracks:  </p>
 
@@ -124,9 +129,9 @@
 	</section>
 
 
-	<section id="dates" class="py-6 bg-gray-100" style="padding-top:80px;margin-top:-80px;"> 
+	<section id="dates" class="py-6 mb-5 bg-gray-100" style="padding-top:80px;margin-top:-80px;"> 
      	<div class="container">
-       	 	<div class="row mb-5"> 
+       	 	<div class="row"> 
            		 <h2>Important Dates</h2>
            		 <table class="table table-striped">
            		 	<thead> 
@@ -145,9 +150,9 @@
 		</div>
 	</section>
 
-	<section id="schedule" class="py-6 bg-gray-100" style="padding-top:80px;margin-top:-80px;"> 
+	<section id="schedule" class="py-6 mb-5 bg-gray-100" style="padding-top:80px;margin-top:-80px;"> 
      	<div class="container">
-       	 	<div class="row mb-5"> 
+       	 	<div class="row"> 
            		 <h2>Workshop Schedule</h2>
            		 <table class="table table-striped">
 				  <thead> 
@@ -180,9 +185,9 @@
 		</div>
 	</section>
 
-	  <section id="speakers" class="py-6 bg-white" style="padding-top:80px;margin-top:-80px;">
+	  <section id="speakers" class="py-6 mb-5 bg-white" style="padding-top:80px;margin-top:-80px;">
 	      <div class="container ">
-	          	<div class="row mb-5">  <h2>Invited Speakers</h2> </div>
+	          	<div class="row">  <h2>Invited Speakers</h2> </div>
 	        <div class="row text-center justify-content-between">  
                 <div class="col-2"> 
                 	<a href="http://www.robots.ox.ac.uk/~vedaldi//">
@@ -271,9 +276,9 @@
 	    </div>
 	</section>  
 
-	  <section id="organizers" class="py-6 bg-white" style="padding-top:80px;margin-top:-80px;">
+	  <section id="organizers" class="py-6 mb-5 bg-white" style="padding-top:80px;margin-top:-80px;">
 	      <div class="container ">
-	          	<div class="row mb-5">  <h2>Organizers</h2> </div>
+	          	<div class="row">  <h2>Organizers</h2> </div>
 	        <div class="row text-center justify-content-between">  
                 <div class="col-2"> 
                 	<a href="https://weiyc.github.io/">
@@ -340,10 +345,10 @@
 	    </div>
 	</section>  
  
-	  <section id="organizers" class="py-6 bg-white" style="padding-top:80px;margin-top:-80px;">
+	  <section id="organizers" class="py-6 mb-5 bg-white" style="padding-top:80px;margin-top:-80px;">
 	      <div class="container ">
-	          	<div class="row mb-5">  <h2>Webmaster</h2> </div> 
-			<div class="row mb-5 text-center justify-content-between">  
+	          	<div class="row">  <h2>Webmaster</h2> </div> 
+			<div class="row text-center justify-content-between">  
 
 				<div class="col-2"> 
                 	 
@@ -361,19 +366,27 @@
 	    </div>
 	</section>  
 
-	  <section id="contact" class="py-6 bg-white" style="padding-top:80px;margin-top:-80px;">
+	  <section id="contact" class="py-6 mb-5 bg-white" style="padding-top:80px;margin-top:-80px;">
 	      <div class="container">
 	        <div class="row"> 
 	          	<h2>Contact</h2>
 	         </div>
-             <div class="row mb-5"> 
+             <div class="row"> 
 	            <p> yunchao@illinois.edu, szhengcvpr@gmail.com  </p> 
 	          </div>
 	           
 	    </div>
 	</section>
   
+<script>
+  $(document).ready(function() {
+    $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1250);
+  });
 
+  $(window).resize(function() {
+    $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1250);
+  });
+</script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
