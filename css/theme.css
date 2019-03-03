@@ -103,5 +103,16 @@ ul.navbar-nav  li {
  div.a {
   text-align: center;
 }
+.titlebox{  
+ min-height:80px;
+
+ text-align:center;
+ margin: auto;  
+ padding-top: 15px;
+ background: #000;
+ background: rgba(0,0,0, 0.2);
+  
+ filter:alpha(opacity=20);
+}
    
  
