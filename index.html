@@ -96,10 +96,10 @@
   
 	<section id="papers" class="py-6 mb-5 bg-white" style="padding-top:80px;margin-top:-80px;">
 	      <div class="container">
-	        <div class="row"> 
+	        <div class="row col-12"> 
 	          	<h2>Call for Papers</h2> <br>
             </div>
-            <div class="row"> 
+            <div class="row col-12"> 
 	            <p>The workshop are expected to deal with data in a weakly supervised manner, which will cover but not limit to the following topics: </p>
 	            <ul>
 	            	<li>Weakly supervised learning algorithms</li>
@@ -125,23 +125,37 @@
 
 	<section id="challenge" class="py-6 mb-5 bg-white" style="padding-top:80px;margin-top:-80px;">
 	      <div class="container">
-	        <div class="row"> 
-	        	
+	        <div class="row col-12">  
 	          	<h2>Challenge</h2> 
 	            <p>We will organize the first Learning from Imperfect Data (LID) challenge on object semantic segmentation and scene parsing, which includes two competition tracks:  </p>
-                </div>
-                <div class="row"> 
+            </div>
+            <div class="row col-12">  
 	            <h4>Track1: Object semantic segmentation with image-level supervision</h4>
-	            <p> In this track, image-level annotations are provided for supervision and the target is performing pixel-level classification. The dataset is built upon the image detection track of ImageNet Large Scale Visual Recognition Competition (ILSVRC). We provide pixel-level annotations of 15K images (validation/testing: 5K/10K) from 200 basic-level categories for evaluation. To the best of our knowledge, this is the most diverse dataset to evaluate the semantic segmentation in the weakly supervised manner. For training, all the images (400K+) included in the ILSVRC DET set are permitted. <br/>
-	            The list of validation and test list can be download from <a href="./lists/val.txt"> val.txt </a>  and <a href="./lists/test.txt"> test.txt </a> <br/> </p>
+	            <p> In this track, image-level annotations are provided for supervision and the target is performing pixel-level classification. The dataset is built upon the image detection track of ImageNet Large Scale Visual Recognition Competition (ILSVRC). We provide pixel-level annotations of 15K images (validation/testing: 5K/10K) from 200 basic-level categories for evaluation. To the best of our knowledge, this is the most diverse dataset to evaluate the semantic segmentation in the weakly supervised manner. <br/> 
 	            
-	            <h5> Evaluation:  <a href="https://evalai.cloudcv.org/web/challenges/challenge-page/276/overview">https://evalai.cloudcv.org/web/challenges/challenge-page/276/overview</a></h5>  
-                </div>
-                <div class="row"> 
+	            <strong> <span class="text-danger">*Note:</span> </strong>  
+	            <ul>
+	            	<li> For training, all the images (400K+) included in the ILSVRC DET set are permitted. </li> 
+                    <li> If supervised saliency detection is applied, only MSRA-B dataset is permitted.  </li> 
+	            	<li> The training dataset is available at  <strong><a href="http://image-net.org/image/ILSVRC2017/ILSVRC2017_DET.tar.gz">Imagenet DET</a> </strong></li>
+	            	<li> The validation and test list are available at <strong> <a href="./lists/val.txt"> val.txt </a></strong>  and <strong><a href="./lists/test.txt"> test.txt </a></strong>  </li>
+	            	<li> <strong> Evaluate:  <a href="https://evalai.cloudcv.org/web/challenges/challenge-page/276/overview">https://evalai.cloudcv.org/web/challenges/challenge-page/276/overview</a></strong> </li>
+	            </ul> 
+	           
+	          </p> 
+            </div>
+
+            <div class="row col-12"> 
 	            <h4>Track2: Scene parsing with point-based supervision</h4>
-	            <p> Beyond object regions, background categories such as wall, road, sky need to be further specified for the scene parsing, which is a much challenging task compared with object semantic segmentation. Thus, it will be more difficult and expensive to manually annotate pixel-level mask for this task. In this track, we propose to leverage several labeled points that are much easier to obtain to guide the training process. The dataset is built upon the well-known ADE 20K, which include 20,210 training images from 150 categories. We provide the point-based annotations on the training set and the evaluation is performed on the original validation (2K) and testing (2K) sets.</p>
-	            <h5> Coming soon ...</h5>
-	           </div>
+	            <p> Beyond object regions, background categories such as wall, road, sky need to be further specified for the scene parsing, which is a much challenging task compared with object semantic segmentation. Thus, it will be more difficult and expensive to manually annotate pixel-level mask for this task. In this track, we propose to leverage several labeled points that are much easier to obtain to guide the training process. The dataset is built upon the well-known ADE 20K, which include 20,210 training images from 150 categories. We provide the point-based annotations on the training set and the evaluation is performed on the original validation (2K) and testing (2K) sets.<br/> 
+	            <strong> <span class="text-danger">*Note:</span> </strong>  
+	            <ul> 
+	            	<li> The training dataset is available at  <strong><a href="http://groups.csail.mit.edu/vision/datasets/ADE20K/">ADE 20K</a> </strong></li>
+	            	<li> The annotation is avaliable at <strong><a href="https://pan.baidu.com/s/1IYM3BFHgGjbfI5SqauRpVg"> Baidu </a> </strong> and <strong> <a href="https://drive.google.com/file/d/1q7FZk9_LCrFZtY4c1r2gd7V7NyeuCKmT/view?usp=sharing"> Google drive</a> </strong> </li>
+	            	<li> <strong> Evaluate: </strong> coming soon</li>
+	            </ul> 
+	            </p>
+           </div>
 	         </div>  
 	    </div>
 	</section>
@@ -149,7 +163,7 @@
 
 	<section id="dates" class="py-6 mb-5 bg-gray-100" style="padding-top:80px;margin-top:-80px;"> 
      	<div class="container">
-       	 	<div class="row"> 
+       	 	<div class="row col-12"> 
            		 <h2>Important Dates</h2>
            		 <table class="table table-striped">
            		 	<thead> 
@@ -162,6 +176,7 @@
 			        <tr> <td>Paper Submission Deadline</td> <td>May 1, 2019</td> </tr>
 			        <tr> <td>Notification to Authors</td> <td>May 5, 2019</td> </tr>
 			        <tr> <td>Camera-Ready Deadline</td> <td>June 1, 2019</td> </tr> 
+			        <tr> <td>Challenge Deadline</td> <td>June 1, 2019</td> </tr>
 			      </tbody>
 			    </table>
 			</div>
@@ -170,7 +185,7 @@
 
 	<section id="schedule" class="py-6 mb-5 bg-gray-100" style="padding-top:80px;margin-top:-80px;"> 
      	<div class="container">
-       	 	<div class="row"> 
+       	 	<div class="row col-12"> 
            		 <h2>Workshop Schedule</h2>
            		 <table class="table table-striped">
 				  <thead> 
@@ -204,7 +219,7 @@
 
 	  <section id="speakers" class="py-6 mb-5 bg-white" style="padding-top:80px;margin-top:-80px;">
 	      <div class="container ">
-	          	<div class="row">  <h2>Invited Speakers</h2> </div>
+	          	<div class="row col-12">  <h2>Invited Speakers</h2> </div>
 	        <div class="row text-center justify-content-between">  
                 <div class="col-2"> 
                 	<a href="http://www.robots.ox.ac.uk/~vedaldi//">
@@ -295,7 +310,7 @@
 
 	  <section id="organizers" class="py-6 mb-5 bg-white" style="padding-top:80px;margin-top:-80px;">
 	      <div class="container ">
-	          	<div class="row">  <h2>Organizers</h2> </div>
+	          	<div class="row col-12">  <h2>Organizers</h2> </div>
 	        <div class="row text-center justify-content-between">  
                 <div class="col-2"> 
                 	<a href="https://weiyc.github.io/">
@@ -372,7 +387,7 @@
  
 	  <section id="organizers" class="py-6 mb-5 bg-white" style="padding-top:80px;margin-top:-80px;">
 	      <div class="container ">
-	          	<div class="row">  <h2>Webmaster</h2> </div> 
+	          	<div class="row col-12">  <h2>Webmaster</h2> </div> 
 			<div class="row text-center justify-content-between">  
 
 				<div class="col-2"> 
@@ -393,10 +408,10 @@
 
 	  <section id="contact" class="py-6 mb-5 bg-white" style="padding-top:80px;margin-top:-80px;">
 	      <div class="container">
-	        <div class="row"> 
+	        <div class="row col-12"> 
 	          	<h2>Contact</h2>
 	         </div>
-             <div class="row"> 
+             <div class="row col-12"> 
 	            <p> yunchao@illinois.edu, szhengcvpr@gmail.com  </p> 
 	          </div>
 	           
