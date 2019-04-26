@@ -146,13 +146,17 @@
 
             <div class="row col-12"> 
 	            <h4>Track2: Scene parsing with point-based supervision</h4>
-	            <p> Beyond object regions, background categories such as wall, road, sky need to be further specified for the scene parsing, which is a much challenging task compared with object semantic segmentation. Thus, it will be more difficult and expensive to manually annotate pixel-level mask for this task. In this track, we propose to leverage several labeled points that are much easier to obtain to guide the training process. The dataset is built upon the well-known ADE 20K, which include 20,210 training images from 150 categories. We provide the point-based annotations on the training set and the evaluation is performed on the original validation (2K) and testing (2K) sets.<br/> 
+	            <p> Beyond object segmentation, background categories such as wall, road, sky need to be further specified for the scene parsing, which is a challenging task compared with object semantic segmentation. Thus, it will be more difficult and expensive to manually annotate pixel-level mask for this task. In this track, we propose to leverage several labeled points that are much easier to obtain to guide the training process.
+The dataset is built upon the well-known ADE20K, which includes 20,210 training images from 150 categories. We provide the point-based annotations on the training set. Please download the data from <a href="http://sceneparsing.csail.mit.edu/data/LID2019"><b>LID Challenge Track2 data</b></a>. <br/> 
 	            <strong> <span class="text-danger">*Note:</span> </strong>  
-	            <ul> 
-	            	<li> The training dataset is available at  <strong><a href="http://groups.csail.mit.edu/vision/datasets/ADE20K/">ADE 20K</a> </strong></li>
-	            	<li> The annotation is avaliable at <strong><a href="https://pan.baidu.com/s/1RuAiWnUmelOmPy6hQoM_UA"> Baidu drive</a> </strong> and <strong> <a href="https://drive.google.com/open?id=1B0enLzxyIULbRZWUi0XpNnXCu7nwFI-f"> Google drive</a> </strong> </li>
-	            	<li> <strong> Evaluate: </strong> coming soon</li>
-	            </ul> 
+	            <ul>
+					<li>Only point-based annotations on the training set (20K) can be used for training, dense annotaions are <strong>NOT permitted</strong>;</li>
+					<li>The prediction on 150 classes should have index range [0, 149] inclusive;</li>
+					<li>Participants can use dense annotations on the validation set (2K) for model tuning;</li>
+					<li>Challenge evaluation is performed on the testing (>3K) sets.</li>
+					<li>Evaluate: <a href="https://evalai.cloudcv.org/web/challenges/challenge-page/300/overview">https://evalai.cloudcv.org/web/challenges/challenge-page/300/overview</a></li>
+				</ul>
+
 	            </p>
            </div>
 	         </div>  
