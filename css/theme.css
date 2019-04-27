@@ -82,6 +82,8 @@ p {
   float: none;
   text-align:center;
 }
+ 
+
 ul.navbar-nav  li {
     float:none;
     display: inline-block;
