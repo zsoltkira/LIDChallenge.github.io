@@ -1139,6 +1139,7 @@ h1, h2, h3, h4, h5,
       font-size: 15px; }
 
 .trend-entry {
+  text-align: justify;
   margin-bottom: 30px; }
   .trend-entry .number {
     -webkit-box-flex: 0;
